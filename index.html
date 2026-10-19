@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movie Night: The Power of Sequencing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Questrial&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="menu">
+    <header class="top">
+      <h1>Movie Night</h1>
+      <p class="lede">Three photos, two cuts. Choose a version, then press play.</p>
+    </header>
+
+    <div class="cuts" role="group" aria-label="Choose a cut">
+      <button class="gloss cut-btn" id="cutA" aria-pressed="true">Main Feature</button>
+      <button class="gloss cut-btn" id="cutB" aria-pressed="false">Alternate Ending</button>
+    </div>
+
+    <main class="tv">
+      <figure class="screen">
+        <img id="mainImage" src="" alt="" tabindex="0" title="Click to go to the next scene">
+        <figcaption>
+          <span id="stageLabel" class="stage-label"></span>
+          <p id="caption" aria-live="polite"></p>
+        </figcaption>
+      </figure>
+    </main>
+
+    <h2 class="scene-heading">Scene Selection</h2>
+    <ol class="strip" id="strip" aria-label="Scenes in this cut"></ol>
+
+    <div class="controls">
+      <button class="gloss" id="prevBtn">Back</button>
+      <span id="counter">Scene 1 of 3</span>
+      <button class="gloss" id="nextBtn">Play Next</button>
+    </div>
+
+    <section class="reading">
+      <h2 id="cutTitle"></h2>
+      <p id="cutSummary"></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
