@@ -1,11 +1,10 @@
 // ---------- DATA ----------
 // The same three photos are reused in both cuts.
 const images = {
-  dvds:     { src: "images/dvds.jpg",     alt: "A black zippered binder of labeled DVDs lying open on a carpet" },
-  receipts: { src: "images/receipts.jpg", alt: "A pile of crumpled paper receipts" },
-  couch:    { src: "images/couch.jpg",    alt: "A worn brown leather couch with rumpled cushions beside a coffee table" }
+  dvds:     { src: "dvds.jpg",     alt: "A black zippered binder of labeled DVDs lying open on a carpet" },
+  receipts: { src: "receipts.jpg", alt: "A pile of crumpled paper receipts" },
+  couch:    { src: "couch.jpg",    alt: "A worn brown leather couch with rumpled cushions beside a coffee table" }
 };
-
 const cuts = {
   A: {
     title: "Main Feature: the night goes right",
